@@ -405,6 +405,7 @@ footer img{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 5%;
 }
 
 .cuatro{
@@ -435,12 +436,66 @@ footer img{
     flex-direction: column;
     flex-wrap: wrap;
     margin: 2%;
+    margin-bottom: 5%;
 }
 
 
 /* Estilos de las Mediq Query para Tablet*/
 
 @media (min-width: 541px) and (max-width: 720px) {
+
+    h1{
+        font-size: 200%;
+    }
+
+    header{
+       flex-direction: column;
+       flex-wrap: nowrap;
+    }
+
+    ul{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    footer a{
+        padding: 1%;
+    }
+
+    footer p{
+        font-size: 1rem;
+    }
+
+    .noticias{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+
+    .noticias div{
+        width: 55%;
+    }
+
+    .informacion div{
+        width: 80%;
+    }
+
+    .informacion{
+        margin-left: 4.5rem;
+    }
+
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6,300px);
+        gap: 0.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .formulario{
+        flex-direction: column;
+    }
 
 }
 
@@ -465,20 +520,25 @@ footer img{
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: center;
+        padding: 5%;
     }
 
     .noticias div{
         width: 70%;
+        margin-bottom: 5%;
     }
 
     .informacion{
-        flex-direction: column;
-        flex-wrap: nowrap;
         margin-left: 4rem;
     }
 
     .informacion div{
         width: 100%;
+        margin-bottom: 8%;
+    }
+
+    .informacion iframe{
+        height: 20rem;
     }
 
     footer P{
@@ -488,6 +548,84 @@ footer img{
     footer a{
         padding: 1%;
     }
+
+    .deportes div img{
+        width: 91%;
+    }
+
+    .galeria{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(14,300px);
+        gap: 0.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .galeria__uno{
+        grid-row: 1/1;
+    }
+
+    .galeria__dos{
+        grid-row: 2/2
+    }
+    .galeria__tres{
+        grid-row: 3/3;
+    }
+    .galeria__cuatro{
+        grid-row: 4/4;
+        grid-column: 1/1;
+    }
+    .galeria__cinco{
+        grid-row: 5/5;
+        grid-column: 1/1;
+    }
+    .galeria__seis{
+        grid-row: 6/6;
+    }
+    .galeria__siete{
+        grid-row: 7/7;
+    }
+    .galeria__ocho{
+        grid-row: 8/8;
+    }
+    .galeria__nueve{
+        grid-row: 9/9;
+        grid-column: 1/1;
+        background-position: top;
+    }
+    .galeria__diez{
+        grid-row: 10/10;
+    }
+    .galeria__once{
+        grid-row: 11/11;
+    }
+    .galeria__doce{
+        grid-row: 12/12;
+    }
+    .galeria__trece{
+        grid-row: 13/13;
+    }
+    .galeria__catorce{
+        grid-row: 14/14;
+    }
+   
+    .gridContainer{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,300px);
+        grid-template-areas: 
+        "uno"
+        "cautro"
+        "dos"
+        "cinco"
+        "tres"
+        "seis";
+    }
+
+    .formulario{
+        flex-direction: column;
+    }
+
 }
 
 
