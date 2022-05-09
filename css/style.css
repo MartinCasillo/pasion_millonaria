@@ -364,12 +364,13 @@ footer img{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-areas: 
-    "portada portada"
     "uno cuatro"
     "cinco dos"
     "tres seis";
-    flex-wrap: wrap;
+    grid-template-rows: repeat(3,1fr);
+
 }
+
 
 .gridContainer h2{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -383,29 +384,54 @@ footer img{
 }
 
 .uno{
-    grid-area: uno;
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    align-content: center;
+}
+
+.uno__uno{
+    background-image: url(../recursos/monumental.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: uno;
     margin-bottom: 2%;
+    margin: 1rem;
+    height: 70%;
+    width: 70%;
 }
 
 .dos{
-    grid-area: dos;
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    align-content: center;
+}
+
+.dos__dos{
+    background-image: url(../recursos/elmonumental.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: dos;
+    margin: 1rem;
+    height: 70%;
+    width: 70%;
 }
 
 .tres{
-    grid-area: tres;
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 5%;
+    align-content: center;
+}
+
+.tres__tres{
+    background-image: url(../recursos/elmonumental2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: tres;
+    height: 70%;
+    width: 70%;
+    margin: 1rem;
 }
 
 .cuatro{
@@ -483,6 +509,114 @@ footer img{
     .informacion{
         margin-left: 4.5rem;
     }
+
+    .gridContainer{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr 1fr 1fr 1fr 1fr 1fr);
+        grid-template-areas:
+        "uno"
+        "cuatro"
+        "dos"
+        "cinco"
+        "tres"
+        "seis";        
+    }
+
+    .gridContainer p{
+        font-size: 90%;
+        width: 90%;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    .uno{
+        grid-area: uno;
+        grid-column: 1/1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .uno__uno{
+        height: 15rem;
+    }
+
+    .dos{
+        grid-area: dos;
+        grid-column: 1/1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+    }
+    
+    .dos__dos{
+        height: 15rem;
+    }
+
+    .tres{
+        grid-area: tres;
+        grid-column: 1/1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+    }
+    
+    .tres__tres{
+        height: 15rem;
+    }
+
+    .cuatro{
+        grid-area: cuatro;
+        grid-column: 1/1;
+        margin: 0px;
+        padding: 0px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .cinco{
+        grid-area: cinco;
+        grid-column: 1/1;
+        margin: 0px;
+        padding: 0px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .seis{
+        grid-area: seis;
+        grid-column: 1/1;
+        padding: 0px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     .galeria{
         grid-template-columns: 1fr 1fr;
@@ -609,19 +743,98 @@ footer img{
     .galeria__catorce{
         grid-row: 14/14;
     }
-   
+
     .gridContainer{
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6,300px);
-        grid-template-areas: 
+        grid-template-rows: repeat(1fr 1fr 1fr 1fr 1fr 1fr);
+        grid-template-areas:
         "uno"
-        "cautro"
+        "cuatro"
         "dos"
         "cinco"
         "tres"
-        "seis";
+        "seis";        
     }
 
+    .gridContainer p{
+        font-size: 90%;
+        width: 90%;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    .uno{
+        grid-area: uno;
+        grid-column: 1/1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .uno__uno{
+        height: 15rem;
+    }
+
+    .dos{
+        grid-area: dos;
+        grid-column: 1/1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+    }
+    
+    .dos__dos{
+        height: 15rem;
+    }
+
+    .tres{
+        grid-area: tres;
+        grid-column: 1/1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+    }
+    
+    .tres__tres{
+        height: 15rem;
+    }
+
+    .cuatro{
+        grid-area: cuatro;
+        grid-column: 1/1;
+        margin: 0px;
+        padding: 0px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .cinco{
+        grid-area: cinco;
+        grid-column: 1/1;
+        margin: 0px;
+        padding: 0px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .seis{
+        grid-area: seis;
+        grid-column: 1/1;
+        padding: 0px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
     .formulario{
         flex-direction: column;
     }
