@@ -33,12 +33,17 @@ ul{
     text-transform: uppercase;
 }
 
-
 .divheader__logo{
     display: flex;
     align-items: center;
     width: 4vh;
+    transition: all 0.3s;
 }
+
+.divheader__logo:hover{
+    transform: scale(1.2);
+}
+
 
 li{
     list-style: none;
@@ -51,9 +56,13 @@ li a{
     font-size: 1.2rem;
 }
 
-.header__navbar a:hover{
-    color: red;
+li a:hover{
+    color: rgb(192, 65, 65);
 }
+
+/* .header__navbar a:hover{
+    color: red;
+} */
 
 h1{
     font-size: 400%;
@@ -85,8 +94,17 @@ h1{
     flex-direction: row;
     justify-content: center;
     margin: 1%;
-
 }
+
+.noticias__efecto{
+    transition: all 0.3s;
+}
+
+.noticias div:hover{
+    transform: scale(1.1);
+}
+
+
 
 .noticias h2{
     text-align: left;
@@ -139,11 +157,11 @@ footer{
 
 footer p{
     font-size: 100%;
-    color: white;
+    color: rgb(245, 239, 239);
 }
 
 footer P:hover{
-    color: red;
+    color: rgb(243, 31, 31);
 }
 
 footer img{
@@ -217,6 +235,15 @@ footer img{
     height: 150px;
 }
 
+.boton{
+    transition: all 0.5s;
+}
+
+.boton:hover{
+    background-color: #121212;
+    transform: scale(1.1);
+    color: rgb(250, 236, 236);
+}
 /* Estilos Galeria */
 
 .galeria{
@@ -345,6 +372,11 @@ footer img{
     background-color: rgb(22, 22, 22);
     -webkit-box-shadow: 0px 0px 6px 3px #000000; 
     box-shadow: 0px 0px 6px 3px #000000;
+    transition: all 0.5s;
+}
+
+.deportes div:hover{
+    transform: scale(1.03);
 }
 
 .deportes h2{
