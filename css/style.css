@@ -41,6 +41,9 @@ ul{
 }
 
 
+.divheader__logo:hover{
+    transform: scale(1.2);
+}
 
 li{
     list-style: none;
@@ -53,6 +56,11 @@ li a{
     font-size: 1.2rem;
 }
 
+
+
+li a:hover{
+    color: rgb(192, 65, 65);
+}
 
 /* .header__navbar a:hover{
     color: red;
@@ -93,6 +101,11 @@ h1{
 .noticias__efecto{
     transition: all 0.3s;
 }
+
+.noticias div:hover{
+    transform: scale(1.1);
+}
+
 
 .noticias h2{
     text-align: left;
@@ -227,6 +240,12 @@ footer img{
     transition: all 0.5s;
 }
 
+.boton:hover{
+    background-color: #121212;
+    transform: scale(1.1);
+    color: rgb(250, 236, 236);
+}
+
 /* Estilos Galeria */
 
 .galeria{
@@ -358,6 +377,9 @@ footer img{
     transition: all 0.5s;
 }
 
+.deportes div:hover{
+    transform: scale(1.03);
+}
 
 .deportes h2{
     margin: 1rem;
@@ -382,7 +404,6 @@ footer img{
     grid-template-rows: repeat(3,1fr);
 
 }
-
 
 .gridContainer h2{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -613,22 +634,6 @@ footer img{
         width: 100%;
     }
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     .galeria{
         grid-template-columns: 1fr 1fr;
