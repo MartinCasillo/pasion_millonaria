@@ -62,10 +62,6 @@ li a:hover{
     color: rgb(192, 65, 65);
 }
 
-/* .header__navbar a:hover{
-    color: red;
-} */
-
 h1{
     font-size: 400%;
     color: rgb(255, 255, 255);
@@ -136,7 +132,8 @@ h1{
 } 
 
 .informacion div{
-    width: 35%;
+    width: 70%;
+    margin-left: 13%;
 }
 
 .informacion iframe{
