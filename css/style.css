@@ -16,50 +16,14 @@ body{
     margin: 2rem;
 }
 
-header{
-    display: flex;  
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: #121212;
-    font-size: 1.2rem;   
+.logo{
+    width: 3rem;
+    margin-left: 5rem;
+    margin-right: 10rem;
 }
 
-ul{
-    display: flex;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-transform: uppercase;
-}
-
-.divheader__logo{
-    display: flex;
-    align-items: center;
-    width: 4vh;
-    transition: all 0.3s;
-}
-
-
-.divheader__logo:hover{
+.logo:hover{
     transform: scale(1.2);
-}
-
-li{
-    list-style: none;
-    margin: 1rem;
-}
-
-li a{
-    text-decoration: none;
-    color: rgb(255, 244, 244);
-    font-size: 1.2rem;
-}
-
-
-
-li a:hover{
-    color: rgb(192, 65, 65);
 }
 
 h1{
@@ -111,7 +75,7 @@ h1{
 }
 
 .noticias div{
-    width: 20%;
+    width: 21.5%;
     background-color: #121212;
     padding: 1rem;
     margin: 2%;
@@ -124,20 +88,11 @@ h1{
     width: 100%;
 }
 
-.informacion{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2%;
-} 
 
-.informacion div{
-    width: 70%;
-    margin-left: 13%;
-}
-
-.informacion iframe{
-    width: 85%;
+.carrusel{
+    width: 60%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 /* Aca comienza el footer */
@@ -172,65 +127,7 @@ footer img{
     text-align: center;
     color: #121212;
     font-size: 200%;
-}
-
-.contactenos{
-    color: #121212;
-    margin: 3rem;
-    font-size: 100%;
-}
-
-.contactenos div{
-    width: 100%;
-    height: 100%;
-}
-
-.contactenos input{
-    width: 70%;
-}
-
-.formulario{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}   
-
-.divformUno{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.divformUno label{
-    margin: 1rem;
-}
-
-.divformUno input{
-    height: 30px;
-}
-
-.divformDos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.divformDos label{
-    margin: 2rem;
-}
-
-.divformDos input{
-    width: 15%;
-    height: 30px;
-    margin: 2rem;
-}
-
-.divformDos textarea{
-    width: 60%;
-    height: 150px;
+    margin-bottom: 3rem;
 }
 
 .boton{
@@ -504,7 +401,7 @@ footer img{
         font-size: 200%;
     }
 
-    header{
+    /* header{
        flex-direction: column;
        flex-wrap: nowrap;
     }
@@ -512,7 +409,7 @@ footer img{
     ul{
         flex-direction: column;
         flex-wrap: nowrap;
-    }
+    } */
 
     footer a{
         padding: 1%;
@@ -530,14 +427,6 @@ footer img{
 
     .noticias div{
         width: 55%;
-    }
-
-    .informacion div{
-        width: 80%;
-    }
-
-    .informacion{
-        margin-left: 4.5rem;
     }
 
     .gridContainer{
@@ -641,21 +530,12 @@ footer img{
         margin-bottom: 1rem;
     }
 
-    .formulario{
-        flex-direction: column;
-    }
-
 }
 
 /* Estilos de las Mediq Query para Mobile*/
 
 @media (min-width: 320px) and (max-width: 540px) {
     header{
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-
-    ul{
         flex-direction: column;
         flex-wrap: nowrap;
     }
@@ -676,18 +556,6 @@ footer img{
         margin-bottom: 5%;
     }
 
-    .informacion{
-        margin-left: 4rem;
-    }
-
-    .informacion div{
-        width: 100%;
-        margin-bottom: 8%;
-    }
-
-    .informacion iframe{
-        height: 20rem;
-    }
 
     footer P{
         font-size: 0.8rem;
@@ -849,10 +717,6 @@ footer img{
         width: 100%;
     }
     
-    .formulario{
-        flex-direction: column;
-    }
-
 }
 
 

@@ -5,25 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../recursos/favicongoogle.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Pasion Millonaria</title>
 </head>
 <body>
     <header>
         <!-- Barra de Navegacion -->
-        <div class="divheader">
-            <a href="../index.html"><img class="divheader__logo" src="../recursos/logo.png" alt="Logo"></a>
-        </div>
-        <nav>
-            <ul class="header__navbar">
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="deportes.html">Deportes</a></li>
-              <li><a href="galeria.html">Galeria</a></li>
-              <li><a href="elmonumental.html">El Monumental</a></li>
-              <li><a href="contacto.html">Contactanos</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img class="img-fluid logo" src="../recursos/logo.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="deportes.html">Deportes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="elmonumental.html">El Monumental</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
         </nav>
-    </header>
+      </header>
     <main>
         <!-- Portada de la pagina -->
         <h1 class="portada">RIVER PLATE EL MAS GRANDE</h1>
@@ -56,5 +76,6 @@
         <a href="https://www.adidas.com.ar/river_plate?-_-ds_agid=58700004382202771&-_-ds_kid=43700036829782524-_-&af_channel=Search&af_reengagement_window=30d&c=Football-River_Plate-General-SB-BMM&cm_mmc=AdieSEM_Google-_-Football-River_Plate-General-SB-BMM-_-General-River_Plate-X-General-_-%2Briver%20%2Bplate-_-dv%3AeCom-_-cm_mmca1%3DAR-_-cm_mmc2%3D&gclid=Cj0KCQjwxtSSBhDYARIsAEn0thS0O8lGSFEaMZyVWhOMLunBxcqwgM7e7z4zA_eyJgnkrKRTPV8FgLkaAjwvEALw_wcB&gclsrc=aw.ds&is_retargeting=true&pid=googleadwords_temp"><img src="../recursos/icons8-éxito-en-la-cesta-24.png" alt="Shopping"></a>
         <a href="https://api.whatsapp.com/send?phone=1130922902&text=Buenas%20tardes!"><img src="../recursos/icons8-whatsapp.svg" alt="Whatsapp"></a>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
