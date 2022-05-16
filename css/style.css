@@ -76,7 +76,7 @@ h1{
 
 .noticias div{
     width: 21.5%;
-    background-color: #121212;
+    background-color: #212529;
     padding: 1rem;
     margin: 2%;
     height: 30%;
@@ -101,7 +101,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #121212;
+    background-color: #212529;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
     text-transform: uppercase;
     font-weight: bold;
@@ -111,6 +111,7 @@ footer{
 footer p{
     font-size: 100%;
     color: rgb(245, 239, 239);
+    margin-bottom: 0px;
 }
 
 footer P:hover{
@@ -118,14 +119,14 @@ footer P:hover{
 }
 
 footer img{
-    width: 120%;
+    width: 100%;
 }
 
 /* Estilos Contacto */
 
 .titulo{
     text-align: center;
-    color: #121212;
+    color: #212529;
     font-size: 200%;
     margin-bottom: 3rem;
 }
@@ -135,263 +136,31 @@ footer img{
 }
 
 .boton:hover{
-    background-color: #121212;
+    background-color: #212529;
     transform: scale(1.1);
     color: rgb(250, 236, 236);
 }
 
-/* Estilos Galeria */
+/* Estilos deportes */
 
-.galeria{
-    display: grid;
-    grid-template-rows: 500px 500px 500px 500px 500px 500px ;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
-    background-position: center;
-    
-}
-
-.galeria__uno{
-    background-image: url(../recursos/galeria6.png);
-    background-repeat: no-repeat;
-    background-position: inherit;
-    background-size: cover;
-    grid-row: 1/3;
-}
-
-.galeria__dos{
-    background-image: url(../recursos/galeria8.png);
-    background-repeat: no-repeat;
-    background-position: inherit;
-    background-size: cover;
-}
-
-.galeria__tres{
-    background-image: url(../recursos/galeria2.png);
-    background-repeat: no-repeat;
-    background-position: inherit;
-    background-size: cover;
-}
-
-.galeria__cuatro{
-    background-image: url(../recursos/galeria12.jpg);
-    background-repeat: no-repeat;
-    background-position: inherit;
-    background-size: cover;
-    grid-column: 2/4;
-}
-
-
-.galeria__cinco{
-    background-image: url(../recursos/galerai10.jpg);
-    background-repeat: no-repeat;
-    background-position: inherit;
-    background-size: cover;
-    grid-column: 1/3;
-}
-
-.galeria__seis{
-    background-image: url(../recursos/galeria1.png);
-    background-repeat: no-repeat;
-    background-position: inherit;
-    background-size: cover;    
-}
-
-.galeria__siete{
-    background-image: url(../recursos/galeria3.png);
-    background-repeat: no-repeat;
-    background-position: inherit;
-    background-size: cover;
-}
-
-.galeria__ocho{
-    background-image: url(../recursos/galeria4.png);
-    background-repeat: no-repeat;
-    background-position: inherit;
-    background-size: cover;
-}
-
-.galeria__nueve{
-    background-image: url(../recursos/galeria11.png);
-    background-repeat: no-repeat;
-    background-position: inherit;
-    background-size: cover;
-    grid-row: 4/6;
-    grid-column: 3;
-}
-
-.galeria__diez{
-    background-image: url(../recursos/galeria5.png);
-    background-repeat: no-repeat;
-    background-position: inherit;
-    background-size: cover;
-}
-
-.galeria__once{
-    background-image: url(../recursos/galeria7.png);
-    background-repeat: no-repeat;
-    background-position: inherit;
-    background-size: cover;
-}
-
-.galeria__doce{
-    background-image: url(../recursos/galeria9.png);
-    background-repeat: no-repeat;
-    background-position: inherit;
-    background-size: cover;
-}
-
-.galeria__trece{
-    background-image: url(../recursos/galeria13.png);
-    background-repeat: no-repeat;
-    background-position: inherit;
-    background-size: cover;
-}
-
-.galeria__catorce{
-    background-image: url(../recursos/galeria14.png);
-    background-repeat: no-repeat;
-    background-position: inherit;
-    background-size: cover;
-}
-/* Estilos Deportes */
 .deportes{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.deportes div{
-    margin: 1rem;
-    background-color: rgb(22, 22, 22);
-    -webkit-box-shadow: 0px 0px 6px 3px #000000; 
-    box-shadow: 0px 0px 6px 3px #000000;
     transition: all 0.5s;
 }
 
-.deportes div:hover{
-    transform: scale(1.03);
+.deportes:hover{
+    transform: scale(1.05);
 }
 
-.deportes h2{
-    margin: 1rem;
-    color: white;
-    text-align: center;
-}
+/* Estilos Galeria */
 
-.deportes img{
-    width: 95%;
-    margin: 1rem;
-}
+
 
 /* Estilos El Monumental */
 
-.gridContainer{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-areas: 
-    "uno cuatro"
-    "cinco dos"
-    "tres seis";
-    grid-template-rows: repeat(3,1fr);
-
+.subtitulo{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
-
-.gridContainer h2{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-bottom: 1%;
-    color: #121212;
-}
-
-.gridContainer p{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #121212;
-}
-
-.uno{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.uno__uno{
-    background-image: url(../recursos/monumental.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    grid-area: uno;
-    margin-bottom: 2%;
-    margin: 1rem;
-    height: 70%;
-    width: 70%;
-}
-
-.dos{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.dos__dos{
-    background-image: url(../recursos/elmonumental.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    grid-area: dos;
-    margin: 1rem;
-    height: 70%;
-    width: 70%;
-}
-
-.tres{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.tres__tres{
-    background-image: url(../recursos/elmonumental2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    grid-area: tres;
-    height: 70%;
-    width: 70%;
-    margin: 1rem;
-}
-
-.cuatro{
-    grid-area: cuatro;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 2%;
-}
-
-.cinco{
-    grid-area: cinco;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 2%
-}
-
-.seis{
-    grid-area: seis;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 2%;
-    margin-bottom: 5%;
-}
-
 
 /* Estilos de las Mediq Query para Tablet*/
 
@@ -400,16 +169,6 @@ footer img{
     h1{
         font-size: 200%;
     }
-
-    /* header{
-       flex-direction: column;
-       flex-wrap: nowrap;
-    }
-
-    ul{
-        flex-direction: column;
-        flex-wrap: nowrap;
-    } */
 
     footer a{
         padding: 1%;
@@ -564,11 +323,6 @@ footer img{
     footer a{
         padding: 1%;
     }
-
-    .deportes div img{
-        width: 91%;
-    }
-
     .galeria{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(14,300px);
