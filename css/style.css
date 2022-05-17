@@ -154,7 +154,6 @@ footer img{
 /* Estilos Galeria */
 
 
-
 /* Estilos El Monumental */
 
 .subtitulo{
@@ -163,6 +162,15 @@ footer img{
 }
 
 /* Estilos de las Mediq Query para Tablet*/
+
+@media (min-width: 721px) and (max-width: 1199px){
+
+    .img__mar{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+}
 
 @media (min-width: 541px) and (max-width: 720px) {
 
@@ -188,17 +196,14 @@ footer img{
         width: 55%;
     }
 
-   
-
+    .img__mar{
+        margin-bottom: 1rem;
+    }
 }
 
 /* Estilos de las Mediq Query para Mobile*/
 
 @media (min-width: 320px) and (max-width: 540px) {
-    header{
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
 
     h1{
         font-size: 150%;
@@ -225,7 +230,13 @@ footer img{
         padding: 1%;
     }
   
-    
+    .imagen__dis{
+        display: none;
+    }
+ 
+    .img__mar{
+        margin-bottom: 1rem;
+    }
 }
 
 
