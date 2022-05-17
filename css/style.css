@@ -142,16 +142,38 @@ footer img{
 }
 
 /* Estilos deportes */
-
 .deportes{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.deportes div{
+    margin: 1rem;
+    background-color: rgb(22, 22, 22);
+    -webkit-box-shadow: 0px 0px 6px 3px #000000; 
+    box-shadow: 0px 0px 6px 3px #000000;
     transition: all 0.5s;
 }
 
-.deportes:hover{
-    transform: scale(1.05);
+.deportes div:hover{
+    transform: scale(1.03);
 }
 
-/* Estilos Galeria */
+.deportes h2{
+    margin: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+}
+
+.deportes img{
+    width: 91%;
+    margin: 1rem;
+}
+
 
 
 /* Estilos El Monumental */
@@ -161,35 +183,54 @@ footer img{
     margin-bottom: 2rem;
 }
 
-/* Estilos de las Mediq Query para Tablet*/
+/* Estilos de las Mediq Query para pantallas medianas*/
 
 @media (min-width: 721px) and (max-width: 1199px){
+
+    /* Ajustando margenes de la galeria */
 
     .img__mar{
         width: 100%;
         margin-bottom: 1rem;
     }
 
+    /* Ajustando tamaño del titulo principal */
+
     h1{
         font-size: 3rem;
     }
 
+    /* Ajustando tamaño de los subtitulos */
+
+    .titulo{
+        font-size: 2rem;
+    }
+ 
+
 }
 
+/* Estilos de las Mediq Query para Tablet*/
+
 @media (min-width: 541px) and (max-width: 720px) {
+  
+    /* Ajustando tamaño del titulo principal */
 
     h1{
         font-size: 2rem;
     }
 
+    /* Ajustando tamaños del footer para todas las paginas */
+
     footer a{
-        padding: 1rem;
+        padding: 0,5rem;
     }
 
     footer p{
         font-size: 1rem;
         margin-left: 0.5rem;
     }
+
+    /* Ajustando la organizacion de la seccion noticias */
 
     .noticias{
         flex-wrap: wrap;
@@ -198,15 +239,25 @@ footer img{
 
 
     .noticias div{
-        width: 25rem;
+        width: 22rem;
     }
+
+    /* Ajustando espacios entre las imagenes de galeria */
 
     .img__mar{
         margin-bottom: 1rem;
     }
 
+    /* Ajustando tamaños del carrusel del Index */
+
     .carrusel{
         width: 25rem;
+    }
+
+    /* Ajustando tamaños de los subitutlos */
+
+    .titulo{
+        font-size: 1rem;
     }
 
 }
@@ -238,7 +289,7 @@ footer img{
     } 
     
     footer a{
-        padding: 1rem;
+        padding: 0.5rem;
     }
   
     .imagen__dis{
@@ -252,7 +303,15 @@ footer img{
     .carrusel{
         width: 20rem;
     }
+
+    .titulo{
+        font-size: 1rem;
+    }
+
 }
+
+
+
 
 
 
