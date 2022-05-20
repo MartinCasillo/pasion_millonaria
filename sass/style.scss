@@ -1,3 +1,4 @@
+@import 'variables';
 /* Reset general para el navegador */
 *{
     margin: 0px;
@@ -7,14 +8,14 @@
 /*  Estilos generales a toda la pagina  */
 
 body{
-    background-color: rgb(255, 245, 245);
-    font-family: 'Times New Roman', Times, serif;
+    background-color: $color-body;
+    font-family: $font-primary;
 }
 
 /* Separador entre la ubicacion , las noticias y el carrusel para marcar un principio y fin de secciones */
 
 .separador{
-    border-top: 2px solid rgba(15, 15, 15, 0.154);
+    border-top: 2px solid $separador-color;
     margin: 2rem;
 }
 
@@ -24,10 +25,9 @@ body{
     width: 3rem;
     margin-left: 5rem;
     margin-right: 10rem; 
-}
-
-.logo:hover{
-    transform: scale(1.2);
+    &:hover{
+        transform: scale(1.2);
+    }
 }
 
 li a {
@@ -37,9 +37,9 @@ li a {
 /* Tamaño y color del titulo principal */
 
 h1{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: $font-secundary;
     font-size: 5rem;
-    color: rgb(255, 255, 255);
+    color: $color-tittle;
 }
 
 /* Titulo principal con imagen de fondo en grande y sus estilos correspondientes */
@@ -69,40 +69,36 @@ h1{
     flex-direction: row;
     justify-content: center;
     margin: 1rem;
-}
-
-
-.noticias__texto{
-    text-align: center;
-    color: white;
-    font-size: 1rem;
-    margin-top: 1rem;
-}
-
-.noticias__card{
-    width: 25rem;
-    background-color: #212529;
-    padding: 1rem;
-    margin: 3rem;
-    height: 24rem;
-    -webkit-box-shadow: 0px 0px 6px 3px #000000; 
-    box-shadow: 0px 0px 6px 3px #000000;
-}
-
-.noticias__img{
-    width: 100%;
+    
+    &__texto{
+        text-align: center;
+        color: $color-tittle;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    &__card{
+        width: 25rem;
+        background-color: $color-primary;
+        padding: 1rem;
+        margin: 3rem;
+        height: 24rem;
+        -webkit-box-shadow: 0px 0px 6px 3px $color-shadows; 
+        box-shadow: 0px 0px 6px 3px $color-shadows;
+    }
+    &__img{
+        width: 100%;
+    }
 }
 
 /* Animacion a los contenedores de las noticias */
 
 .noticias__efecto{
     transition: all 0.3s;
-}
 
-.noticias__card:hover{
-    transform: scale(1.1);
+    &:hover{
+        transform: scale(1.1);
+    }
 }
-
 
 /* Tamaño del carrusel de imagen en el Index */
 
@@ -118,32 +114,31 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #212529;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    background-color: $color-secundary;
+    font-family: $font-secundary; 
     text-transform: uppercase;
     font-weight: bold;
     padding: 0.1rem;
-}
 
-.redes__derechos{
-    font-size: 1rem;
-    color: rgb(245, 239, 239);
-    margin-bottom: 0px;
-}
+    &__derechos{
+        font-size: 1rem;
+        color: $color-tittle;
+        margin-bottom: 0px;
+        &:hover{
+            color: $redes-hover;
+        }
+    }
 
-.redes__derechos:hover{
-    color: rgb(243, 31, 31);
-}
-
-.redes__img{
-    width: 100%;
+    &__img{
+        width: 100%;
+    }
 }
 
 /* Estilos de la pagina Contacto */
 
 .tituloForm{
     text-align: center;
-    color: #212529;
+    color: $color-secundary;
     font-size: 5rem;
     margin-bottom: 3rem;
 }
@@ -151,15 +146,19 @@ h1{
 /* Animacion a los botones */
 
 .boton{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: $font-secundary;
     transition: all 0.5s;
+    background-color: $button-color;
+    color: $button-color-letter;
+
+    &:hover{
+        background-color: $color-secundary;
+        transform: scale(1.1);
+        color: $button-color-hover;  
+    }
+
 }
 
-.boton:hover{
-    background-color: #212529;
-    transform: scale(1.1);
-    color: rgb(250, 236, 236);
-}
 
 /* Estilos y tamaños de la pagina Deportes */
 .deportes{
@@ -168,31 +167,30 @@ h1{
     align-items: center;
     justify-content: center;
     width: 100%;
-}
 
-.deportes__card{
-    margin: 1rem;
-    background-color: rgb(22, 22, 22);
-    -webkit-box-shadow: 0px 0px 6px 3px #000000; 
-    box-shadow: 0px 0px 6px 3px #000000;
-    transition: all 0.5s;
-}
+    &__card{
+        margin: 1rem;
+        background-color: $color-secundary;
+        -webkit-box-shadow: 0px 0px 6px 3px $color-shadows; 
+        box-shadow: 0px 0px 6px 3px $color-shadows;
+        transition: all 0.5s;
+        &:hover{
+            transform: scale(1.03); 
+        }
+    }
 
-.deportes__card:hover{
-    transform: scale(1.03);
-}
+    &__subtitulo{
+        margin: 1rem;
+        font-family: $font-secundary;
+        color: $color-tittle;
+        text-align: center;
+    }
 
-.deportes__subtitulo{
-    margin: 1rem;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    text-align: center;
-}
-
-.deportes__imagen{
-    width: 91%;
-    margin: 1rem;
-    margin-left: 2rem;
+    &__imagen{
+        width: 91%;
+        margin: 1rem;
+        margin-left: 2rem;
+    }
 }
 
 
@@ -242,12 +240,13 @@ h1{
 
     /* Ajustando tamaños del footer para todas las paginas */
 
-    .redes__links{
-        padding: 0,5rem;
-    }
-
-    .redes__derechos{
-        display: none;
+    .redes{
+        &__links{
+            padding: 0,5rem;
+        }
+        &__derechos{
+            display: none;
+        }
     }
 
     /* Ajustando la organizacion de la seccion noticias */
@@ -255,13 +254,11 @@ h1{
     .noticias{
         flex-wrap: wrap;
         flex-direction: column;
+        &__card{
+            width: 22rem; 
+        }
     }
-
-
-    .noticias__card{
-        width: 22rem;
-    }
-
+ 
     /* Ajustando espacios entre las imagenes de galeria */
 
     .img__marGaleria{
@@ -299,24 +296,23 @@ h1{
         flex-wrap: nowrap;
         justify-content: center;
         padding: 0.5rem;
-    }
 
-    .noticias__card{
-        width: 20rem;
-        margin-bottom: 1rem;
+        &__card{
+            width: 20rem;
+            margin-bottom: 1rem; 
+        }
     }
-
 
     /* Tamaños ajustados del footer */
 
-    .redes__derechos{
-        display: none;
-    } 
-    
-    .redes__links{
-        padding: 0.5rem;
-    }
-  
+    .redes{
+        &__derechos{
+            display: none;
+        }
+        &__links{
+            padding: 0.5rem;
+        }
+    }  
     /* Ocultar las imagenes de la seccion El Monumental */
 
     .imagen__disMonumental{
@@ -344,8 +340,8 @@ h1{
     /* Ajustando margenes de las imagenes de la seccion Deportes */
 
     .deportes__imagen{
-        margin-left: 1rem
-    };
+        margin-left: 1rem;
+    }
 
 }
 
