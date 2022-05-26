@@ -1,0 +1,32 @@
+/* Estilos y tamaños de la pagina Deportes */
+.deportes{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    &__card{
+        margin: 1rem;
+        background-color: $color-secundary;
+        -webkit-box-shadow: 0px 0px 6px 3px $color-shadows; 
+        box-shadow: 0px 0px 6px 3px $color-shadows;
+        transition: all 0.5s;
+        &:hover{
+            transform: scale(1.03); 
+        }
+    }
+
+    &__subtitulo{
+        margin: 1rem;
+        font-family: $font-secundary;
+        color: $color-tittle;
+        text-align: center;
+    }
+
+    &__imagen{
+        width: 91%;
+        margin: 1rem;
+        margin-left: 2rem;
+    }
+}

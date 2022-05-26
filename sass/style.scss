@@ -1,4 +1,11 @@
 @import 'variables';
+@import 'boton';
+@import 'header';
+@import 'portada';
+@import 'index';
+@import 'deportes';
+@import 'footer';
+
 /* Reset general para el navegador */
 *{
     margin: 0px;
@@ -19,122 +26,16 @@ body{
     margin: 2rem;
 }
 
-/* Animacion del Logo principal */
+/* Separador de titulo y galeria */
 
-.logo{
-    width: 3rem;
-    margin-left: 5rem;
-    margin-right: 10rem; 
-    &:hover{
-        transform: scale(1.2);
-    }
+.separadorGaleria{
+    border-top: 2px solid $color-primary;
+    margin-right: 10rem;
+    margin-left: 10rem;
+    margin-bottom: 2rem;
 }
 
-li a {
-    text-transform: uppercase;
-}
-
-/* Tamaño y color del titulo principal */
-
-h1{
-    font-family: $font-secundary;
-    font-size: 5rem;
-    color: $color-tittle;
-}
-
-/* Titulo principal con imagen de fondo en grande y sus estilos correspondientes */
-
-.portada{
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    flex-wrap: wrap;
-    align-items: center;
-    background-image: url(../recursos/portada.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 40rem;
-    padding: 1rem;
-	margin-bottom: 1rem;
-}
-
-/* Estilos de la seccion de Noticias del Index */
-
-.noticias{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    margin: 1rem;
-    
-    &__texto{
-        text-align: center;
-        color: $color-tittle;
-        font-size: 1rem;
-        margin-top: 1rem;
-    }
-    &__card{
-        width: 25rem;
-        background-color: $color-primary;
-        padding: 1rem;
-        margin: 3rem;
-        height: 24rem;
-        -webkit-box-shadow: 0px 0px 6px 3px $color-shadows; 
-        box-shadow: 0px 0px 6px 3px $color-shadows;
-    }
-    &__img{
-        width: 100%;
-    }
-}
-
-/* Animacion a los contenedores de las noticias */
-
-.noticias__efecto{
-    transition: all 0.3s;
-
-    &:hover{
-        transform: scale(1.1);
-    }
-}
-
-/* Tamaño del carrusel de imagen en el Index */
-
-.carruselIndex{
-    width: 50rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-/* Estilos y tamaños del Footer */
-
-.redes{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: $color-secundary;
-    font-family: $font-secundary; 
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 0.1rem;
-
-    &__derechos{
-        font-size: 1rem;
-        color: $color-tittle;
-        margin-bottom: 0px;
-        &:hover{
-            color: $redes-hover;
-        }
-    }
-
-    &__img{
-        width: 100%;
-    }
-}
-
-/* Estilos de la pagina Contacto */
+/* Estilos de la pagina Contacto*/
 
 .tituloForm{
     text-align: center;
@@ -142,65 +43,24 @@ h1{
     font-size: 5rem;
     margin-bottom: 3rem;
 }
+/* Estilos subtitulo El Monumental */
 
-/* Animacion a los botones */
-
-.boton{
-    font-family: $font-secundary;
-    transition: all 0.5s;
-    background-color: $button-color;
-    color: $button-color-letter;
-
-    &:hover{
-        background-color: $color-secundary;
-        transform: scale(1.1);
-        color: $button-color-hover;  
-    }
-
-}
-
-
-/* Estilos y tamaños de la pagina Deportes */
-.deportes{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-
-    &__card{
-        margin: 1rem;
-        background-color: $color-secundary;
-        -webkit-box-shadow: 0px 0px 6px 3px $color-shadows; 
-        box-shadow: 0px 0px 6px 3px $color-shadows;
-        transition: all 0.5s;
-        &:hover{
-            transform: scale(1.03); 
-        }
-    }
-
-    &__subtitulo{
-        margin: 1rem;
-        font-family: $font-secundary;
-        color: $color-tittle;
-        text-align: center;
-    }
-
-    &__imagen{
-        width: 91%;
-        margin: 1rem;
-        margin-left: 2rem;
-    }
-}
-
-
-
-/* Estilos El Monumental */
 
 .subtituloMonumental{
     margin-top: 2rem;
     margin-bottom: 2rem;
+    &__p{
+        font-family: $font-secundary;
+    }
 }
 
+/* Estilos titulo galeria */
+
+.galeriaTitulo{
+    font-size: 2rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    text-align: center
+}
 @import "mediaquerys";
 

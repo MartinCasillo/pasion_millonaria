@@ -1,0 +1,16 @@
+/* Animacion del Logo principal y estilos del header */
+
+.logo{
+    width: 3rem;
+    margin-left: 5rem;
+    margin-right: 10rem; 
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+.nav-item{
+    font-family: $font-primary;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}

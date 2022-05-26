@@ -1,0 +1,25 @@
+/* Estilos y tamaños del Footer */
+
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: $color-secundary;
+    font-family: $font-secundary; 
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.1rem;
+
+    &__derechos{
+        font-size: 1rem;
+        color: $color-tittle;
+        margin-bottom: 0px;
+        &:hover{
+            color: $redes-hover;
+        }
+    }
+
+    &__img{
+        width: 100%;
+    }
+}

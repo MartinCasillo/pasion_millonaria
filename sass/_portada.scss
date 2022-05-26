@@ -1,0 +1,25 @@
+
+/* Tamaño y color del titulo principal */
+
+h1{
+    font-size: 5rem;
+    color: $color-tittle;
+}
+
+/* Titulo principal con imagen de fondo en grande y sus estilos correspondientes */
+
+.portada{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(../recursos/portada.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 40rem;
+    padding: 1rem;
+	margin-bottom: 1rem;
+}
