@@ -1,4 +1,17 @@
 /* Estilos y tamaños de la pagina Deportes */
+@mixin estiloDeportes(){
+    margin: 1rem;
+    background-color: $color-secundary;
+    -webkit-box-shadow: 0px 0px 6px 3px $color-shadows; 
+    box-shadow: 0px 0px 6px 3px $color-shadows;
+}
+
+@mixin estiloSubtitulo(){
+    margin: 1rem;
+    font-family: $font-secundary;
+    color: $color-tittle;
+}
+
 .deportes{
     display: flex;
     flex-wrap: wrap;
@@ -7,10 +20,7 @@
     width: 100%;
 
     &__card{
-        margin: 1rem;
-        background-color: $color-secundary;
-        -webkit-box-shadow: 0px 0px 6px 3px $color-shadows; 
-        box-shadow: 0px 0px 6px 3px $color-shadows;
+        @include estiloDeportes();
         transition: all 0.5s;
         &:hover{
             transform: scale(1.03); 
@@ -18,9 +28,7 @@
     }
 
     &__subtitulo{
-        margin: 1rem;
-        font-family: $font-secundary;
-        color: $color-tittle;
+        @include estiloSubtitulo();
         text-align: center;
     }
 

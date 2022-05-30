@@ -1,9 +1,13 @@
 /* Animacion del Logo principal y estilos del header */
 
-.logo{
+@mixin tamañoLogo(){
     width: 3rem;
     margin-left: 5rem;
     margin-right: 10rem; 
+}
+
+.logo{
+    @include tamañoLogo();
     &:hover{
         transform: scale(1.2);
     }
