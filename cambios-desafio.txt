@@ -1,0 +1,35 @@
+En este documento explico los cambios realizados para el desafio.
+
+En la pagina Iindex.html agrege estas keywords 
+"River, River Plate, Millonario, El Millonario, Noticias sobre River Plate, Noticias sobre River"
+
+Luego tambien agregue un meta Description con este subtitulo 
+"Enterate de las ultimas noticias, sus proximos partidos y donde podes encontrarnos. Mas que felices de recibirte en el mundo Millonario."
+
+En la pagina de Deportes.html agregue estas keywords
+"River, River Plate, Millonario, El Millonario, Deportes River Plate, Polideportivo River, Deportes River , Polideportivo RIver Plate, Futbol Femenino River, Hockey River, Volley River, Handball River, Ajedrez River, Patin artistico River, Gimnasia artistica River, Basquet river, Tenis River"
+
+Tambien agregue un meta Description con este subtitulo
+"Entra y conoce el polideportivo del club millonario. No te quedes afuera y participa de la actividad que mas te guste."
+
+En la pagina de Elmonumental.html agregue estas keywords 
+"El Monumental, Monumental, Estadio River Plate, Estadio River, Estadio Liberti"
+
+Tambien agreuge un meta Description con este subtitulo
+"Ingresa , conoce e informate sobre la historia de nuestro club, su estadio y las actividades que se realizan en el."
+
+En la pagina Galeria.html agregue estas keywords 
+"Fotos River Plate, Fotos River, Galeria River Plate, Galeria River, River Plate"
+
+Tambien agregue un meta Description con este subtitulo
+"Visita nuestra gran galeria de fotos aportadas por la comunidad sobre el club River Plate y sus jugadores."
+
+Y por ultimo en la pagina Contacto.html agregue estas keywords 
+"River, River Plate, Contacto River Plate, Contacto River, Ingresar River, Ingresar River Plate"
+
+Tambien agregue un meta Description con este subitutlo
+"Dejanos resolver cualquier duda que tengas sobre el club y su actualidad"
+
+Y por la parte de estilos utilize Mixins para los estilos de distintas secciones de la pagina.
+
+Martin Casillo.
