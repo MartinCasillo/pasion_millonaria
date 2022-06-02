@@ -1,24 +1,6 @@
 /* Estilos de la seccion de Noticias del Index */
+@import 'helper';
 
-
-@mixin colorTarjeta(){
-    background-color: $color-secundary;
-    -webkit-box-shadow: 0px 0px 6px 3px $color-shadows; 
-    box-shadow: 0px 0px 6px 3px $color-shadows;   
-}
-
-@mixin tamañoTarjeta(){
-    width: 25rem;
-    padding: 1rem;
-    margin: 3rem;
-    height: 24rem;
-}
-
-@mixin colorTexto(){
-    color: $color-tittle;
-    font-size: 1rem;
-    margin-top: 1rem;
-}
 
 .noticias{
     display: flex;
@@ -33,7 +15,7 @@
         @include colorTexto();
    }
     &__card{
-        @include tamañoTarjeta();
+        @include tamanioTarjeta();
         @include colorTarjeta();
     }
     &__img{

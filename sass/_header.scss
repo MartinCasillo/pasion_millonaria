@@ -1,18 +1,13 @@
+@import 'helper';
 /* Animacion del Logo principal y estilos del header */
 
-@mixin tamañoLogo(){
-    width: 3rem;
-    margin-left: 5rem;
-    margin-right: 10rem; 
-}
-
 .logo{
-    @include tamañoLogo();
+    @include tamanioLogo();
     &:hover{
         transform: scale(1.2);
     }
 }
-
+    
 .nav-item{
     font-family: $font-primary;
     font-size: 1.5rem;

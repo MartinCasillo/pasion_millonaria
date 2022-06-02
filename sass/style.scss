@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'helper';
 @import 'boton';
 @import 'header';
 @import 'portada';
@@ -30,8 +31,8 @@ body{
 
 .separadorGaleria{
     border-top: 2px solid $color-primary;
-    margin-right: 10rem;
-    margin-left: 10rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
     margin-bottom: 2rem;
 }
 
@@ -60,15 +61,10 @@ body{
 
 /* Estilos titulo galeria */
 
-@mixin tituloGaleria(){
-    font-size: 2rem;
-    margin-left: 5rem;
-    margin-top: 2rem;
-}
 
 .galeriaTitulo{
     text-align: center;
-    @include tituloGaleria();
+    
 }
 
 @import "mediaquerys";

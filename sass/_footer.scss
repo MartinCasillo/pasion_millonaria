@@ -1,18 +1,5 @@
+@import 'helper';
 /* Estilos y tamaños del Footer */
-
-@mixin estiloFooter(){
-    background-color: $color-secundary;
-    font-family: $font-secundary; 
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 0.1rem;
-}
-
-@mixin footerTexto{
-    font-size: 1rem;
-    color: $color-tittle;
-    margin-bottom: 0px;
-}
 
 .redes{
     display: flex;

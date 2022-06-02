@@ -1,6 +1,13 @@
 @charset "UTF-8";
 /* COLORES */
 /* TIPOGRAFIAS */
+/* Mixins para estilos en la seccion Deportes */
+/* Mixins para los subtitulos */
+/* Mixins para estilos del footer */
+/* Mixins para el estilo del Logo principal */
+/* Mixins para los estilos de las tarjetas */
+/* Mixins para los estilos de textos */
+/* Mixins para el tamaño y estilo de la portada principal */
 /* Animacion a los botones */
 .boton {
   font-family: "Lato", sans-serif;
@@ -12,6 +19,13 @@
     transform: scale(1.1);
     color: #f8e8e8; }
 
+/* Mixins para estilos en la seccion Deportes */
+/* Mixins para los subtitulos */
+/* Mixins para estilos del footer */
+/* Mixins para el estilo del Logo principal */
+/* Mixins para los estilos de las tarjetas */
+/* Mixins para los estilos de textos */
+/* Mixins para el tamaño y estilo de la portada principal */
 /* Animacion del Logo principal y estilos del header */
 .logo {
   width: 3rem;
@@ -25,6 +39,13 @@
   font-size: 1.5rem;
   text-transform: uppercase; }
 
+/* Mixins para estilos en la seccion Deportes */
+/* Mixins para los subtitulos */
+/* Mixins para estilos del footer */
+/* Mixins para el estilo del Logo principal */
+/* Mixins para los estilos de las tarjetas */
+/* Mixins para los estilos de textos */
+/* Mixins para el tamaño y estilo de la portada principal */
 /* Tamaño y color del titulo principal */
 h1 {
   font-size: 5rem;
@@ -47,6 +68,13 @@ h1 {
   margin-bottom: 1rem; }
 
 /* Estilos de la seccion de Noticias del Index */
+/* Mixins para estilos en la seccion Deportes */
+/* Mixins para los subtitulos */
+/* Mixins para estilos del footer */
+/* Mixins para el estilo del Logo principal */
+/* Mixins para los estilos de las tarjetas */
+/* Mixins para los estilos de textos */
+/* Mixins para el tamaño y estilo de la portada principal */
 .noticias {
   display: flex;
   flex-wrap: wrap;
@@ -74,6 +102,13 @@ h1 {
     .noticias__efecto:hover {
       transform: scale(1.1); }
 
+/* Mixins para estilos en la seccion Deportes */
+/* Mixins para los subtitulos */
+/* Mixins para estilos del footer */
+/* Mixins para el estilo del Logo principal */
+/* Mixins para los estilos de las tarjetas */
+/* Mixins para los estilos de textos */
+/* Mixins para el tamaño y estilo de la portada principal */
 /* Estilos y tamaños de la pagina Deportes */
 .deportes {
   display: flex;
@@ -99,6 +134,13 @@ h1 {
     margin: 1rem;
     margin-left: 2rem; }
 
+/* Mixins para estilos en la seccion Deportes */
+/* Mixins para los subtitulos */
+/* Mixins para estilos del footer */
+/* Mixins para el estilo del Logo principal */
+/* Mixins para los estilos de las tarjetas */
+/* Mixins para los estilos de textos */
+/* Mixins para el tamaño y estilo de la portada principal */
 /* Estilos y tamaños del Footer */
 .redes {
   display: flex;
@@ -136,8 +178,8 @@ body {
 /* Separador de titulo y galeria */
 .separadorGaleria {
   border-top: 2px solid #212529;
-  margin-right: 10rem;
-  margin-left: 10rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
   margin-bottom: 2rem; }
 
 /* Estilos de la pagina Contacto*/
@@ -156,10 +198,7 @@ body {
 
 /* Estilos titulo galeria */
 .galeriaTitulo {
-  text-align: center;
-  font-size: 2rem;
-  margin-left: 5rem;
-  margin-top: 2rem; }
+  text-align: center; }
 
 /* Estilos de las Mediq Query para pantallas medianas*/
 @media (min-width: 721px) and (max-width: 1199px) {

@@ -1,19 +1,6 @@
-
+@import 'helper';
 /* Tamaño y color del titulo principal */
 
-@mixin fotoPortada(){
-    background-image: url(../recursos/portada.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-@mixin tamañoPortada(){
-    height: 40rem;
-    padding: 1rem;
-	margin-bottom: 1rem;
-}
 
 h1{
     font-size: 5rem;
@@ -29,5 +16,5 @@ h1{
     flex-wrap: wrap;
     align-items: center;
     @include fotoPortada();
-    @include tamañoPortada();
+    @include tamanioPortada();
 }
