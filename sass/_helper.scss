@@ -77,3 +77,13 @@
     padding: 1rem;
 	margin-bottom: 1rem;
 }
+
+@mixin botonNormal{
+    background-color: $button-color;
+    color: $button-color-letter;
+}
+
+@mixin botonNav{
+    background-color: $color-body;
+    color: $color-primary;
+}

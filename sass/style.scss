@@ -26,16 +26,6 @@ body{
     border-top: 2px solid $separador-color;
     margin: 2rem;
 }
-
-/* Separador de titulo y galeria */
-
-.separadorGaleria{
-    border-top: 2px solid $color-primary;
-    margin-right: 5rem;
-    margin-left: 5rem;
-    margin-bottom: 2rem;
-}
-
 /* Estilos de la pagina Contacto*/
 
 @mixin formTitulo(){
