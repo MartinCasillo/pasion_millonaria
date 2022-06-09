@@ -3,18 +3,12 @@
 
 
 h1{
-    font-size: 5rem;
-    color: $color-tittle;
+    @include tituloPrincipal();
 }
 
 /* Titulo principal con imagen de fondo en grande y sus estilos correspondientes */
 
 .portada{
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    flex-wrap: wrap;
-    align-items: center;
     @include fotoPortada();
     @include tamanioPortada();
 }

@@ -3,12 +3,7 @@
 
 
 .noticias{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    margin: 1rem;
+    @include noticiasCard();
     
     &__texto{
         text-align: center;

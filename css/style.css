@@ -1,41 +1,49 @@
 @charset "UTF-8";
 /* COLORES */
 /* TIPOGRAFIAS */
+/* Mixin para los estilos lineales del body*/
+/* Mixins para el estilo del Logo principal */
+/* Mixins para los estilos del titulo principal */
+/* Mixins para el tamaño y estilo de la portada principal */
+/* Mixins para estilos del footer */
 /* Mixins para estilos en la seccion Deportes */
 /* Mixins para los subtitulos */
-/* Mixins para estilos del footer */
-/* Mixins para el estilo del Logo principal */
+/* Mixins para los estilos de las tarjetas de la seccion Noticias */
 /* Mixins para los estilos de las tarjetas */
 /* Mixins para los estilos de textos */
-/* Mixins para el tamaño y estilo de la portada principal */
+/* Mixin para estilos de los botones */
 /* Animacion a los botones */
 .boton {
-  font-family: "Lato", sans-serif;
   transition: all 0.5s;
   background-color: #080808;
+  font-family: "Lato", sans-serif;
   color: #f0b7b7f6; }
   .boton:hover {
     background-color: #121212;
-    transform: scale(1.1);
+    transform: scale(1.2);
     color: #f8e8e8; }
 
 .boton-nav {
-  font-family: "Lato", sans-serif;
   transition: all 0.5s;
   background-color: #fffffff6;
+  font-family: "Lato", sans-serif;
   color: #212529; }
   .boton-nav:hover {
     background-color: #121212;
     transform: scale(1.2);
     color: #f8e8e8; }
 
+/* Mixin para los estilos lineales del body*/
+/* Mixins para el estilo del Logo principal */
+/* Mixins para los estilos del titulo principal */
+/* Mixins para el tamaño y estilo de la portada principal */
+/* Mixins para estilos del footer */
 /* Mixins para estilos en la seccion Deportes */
 /* Mixins para los subtitulos */
-/* Mixins para estilos del footer */
-/* Mixins para el estilo del Logo principal */
+/* Mixins para los estilos de las tarjetas de la seccion Noticias */
 /* Mixins para los estilos de las tarjetas */
 /* Mixins para los estilos de textos */
-/* Mixins para el tamaño y estilo de la portada principal */
+/* Mixin para estilos de los botones */
 /* Animacion del Logo principal y estilos del header */
 .logo {
   width: 3rem;
@@ -52,13 +60,17 @@
   font-size: 1rem;
   color: #fffffff6; }
 
+/* Mixin para los estilos lineales del body*/
+/* Mixins para el estilo del Logo principal */
+/* Mixins para los estilos del titulo principal */
+/* Mixins para el tamaño y estilo de la portada principal */
+/* Mixins para estilos del footer */
 /* Mixins para estilos en la seccion Deportes */
 /* Mixins para los subtitulos */
-/* Mixins para estilos del footer */
-/* Mixins para el estilo del Logo principal */
+/* Mixins para los estilos de las tarjetas de la seccion Noticias */
 /* Mixins para los estilos de las tarjetas */
 /* Mixins para los estilos de textos */
-/* Mixins para el tamaño y estilo de la portada principal */
+/* Mixin para estilos de los botones */
 /* Tamaño y color del titulo principal */
 h1 {
   font-size: 5rem;
@@ -81,13 +93,17 @@ h1 {
   margin-bottom: 1rem; }
 
 /* Estilos de la seccion de Noticias del Index */
+/* Mixin para los estilos lineales del body*/
+/* Mixins para el estilo del Logo principal */
+/* Mixins para los estilos del titulo principal */
+/* Mixins para el tamaño y estilo de la portada principal */
+/* Mixins para estilos del footer */
 /* Mixins para estilos en la seccion Deportes */
 /* Mixins para los subtitulos */
-/* Mixins para estilos del footer */
-/* Mixins para el estilo del Logo principal */
+/* Mixins para los estilos de las tarjetas de la seccion Noticias */
 /* Mixins para los estilos de las tarjetas */
 /* Mixins para los estilos de textos */
-/* Mixins para el tamaño y estilo de la portada principal */
+/* Mixin para estilos de los botones */
 .noticias {
   display: flex;
   flex-wrap: wrap;
@@ -115,13 +131,17 @@ h1 {
     .noticias__efecto:hover {
       transform: scale(1.1); }
 
+/* Mixin para los estilos lineales del body*/
+/* Mixins para el estilo del Logo principal */
+/* Mixins para los estilos del titulo principal */
+/* Mixins para el tamaño y estilo de la portada principal */
+/* Mixins para estilos del footer */
 /* Mixins para estilos en la seccion Deportes */
 /* Mixins para los subtitulos */
-/* Mixins para estilos del footer */
-/* Mixins para el estilo del Logo principal */
+/* Mixins para los estilos de las tarjetas de la seccion Noticias */
 /* Mixins para los estilos de las tarjetas */
 /* Mixins para los estilos de textos */
-/* Mixins para el tamaño y estilo de la portada principal */
+/* Mixin para estilos de los botones */
 /* Estilos y tamaños de la pagina Deportes */
 .deportes {
   display: flex;
@@ -147,13 +167,17 @@ h1 {
     margin: 1rem;
     margin-left: 2rem; }
 
+/* Mixin para los estilos lineales del body*/
+/* Mixins para el estilo del Logo principal */
+/* Mixins para los estilos del titulo principal */
+/* Mixins para el tamaño y estilo de la portada principal */
+/* Mixins para estilos del footer */
 /* Mixins para estilos en la seccion Deportes */
 /* Mixins para los subtitulos */
-/* Mixins para estilos del footer */
-/* Mixins para el estilo del Logo principal */
+/* Mixins para los estilos de las tarjetas de la seccion Noticias */
 /* Mixins para los estilos de las tarjetas */
 /* Mixins para los estilos de textos */
-/* Mixins para el tamaño y estilo de la portada principal */
+/* Mixin para estilos de los botones */
 /* Estilos y tamaños del Footer */
 .redes {
   display: flex;

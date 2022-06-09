@@ -1,24 +1,18 @@
 /* Animacion a los botones */
 .boton{
-    font-family: $font-secundary;
     transition: all 0.5s;
     @include botonNormal;
     &:hover{
-        background-color: $color-secundary;
-        transform: scale(1.1);
-        color: $button-color-hover;  
+        @include botonHover();
     }
 
 }
 
 .boton-nav{
-    font-family: $font-secundary;
     transition: all 0.5s;
     @include botonNav;
     &:hover{
-        background-color: $color-secundary;
-        transform: scale(1.2);
-        color: $button-color-hover;  
+        @include botonHover();
     }
 
 }

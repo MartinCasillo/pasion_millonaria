@@ -2,9 +2,6 @@
 /* Estilos y tamaños del Footer */
 
 .redes{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
     @include estiloFooter();
 
     &__derechos{

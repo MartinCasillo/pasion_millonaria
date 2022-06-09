@@ -16,8 +16,7 @@
 /*  Estilos generales a toda la pagina  */
 
 body{
-    background-color: $color-body;
-    font-family: $font-primary;
+    @include bodyLineal();
 }
 
 /* Separador entre la ubicacion , las noticias y el carrusel para marcar un principio y fin de secciones */
@@ -39,7 +38,6 @@ body{
     @include formTitulo();
 }
 /* Estilos subtitulo El Monumental */
-
 
 .subtituloMonumental{
     margin-top: 2rem;

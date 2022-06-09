@@ -1,5 +1,68 @@
 
+/* Mixin para los estilos lineales del body*/
+
+@mixin bodyLineal(){
+    background-color: $color-body;
+    font-family: $font-primary;
+}
+
+/* Mixins para el estilo del Logo principal */
+
+@mixin tamanioLogo(){
+    width: 3rem;
+    margin-left: 5rem;
+    margin-right: 10rem; 
+}
+
+/* Mixins para los estilos del titulo principal */
+
+@mixin tituloPrincipal(){
+    font-size: 5rem;
+    color: $color-tittle;
+}
+
+/* Mixins para el tamaño y estilo de la portada principal */
+
+@mixin fotoPortada(){
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(../recursos/portada.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@mixin tamanioPortada(){
+    height: 40rem;
+    padding: 1rem;
+	margin-bottom: 1rem;
+}
+
+/* Mixins para estilos del footer */
+
+@mixin estiloFooter(){
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: $color-secundary;
+    font-family: $font-secundary; 
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.1rem;
+}
+
+@mixin footerTexto{
+    font-size: 1rem;
+    color: $color-tittle;
+    margin-bottom: 0px;
+}
+
 /* Mixins para estilos en la seccion Deportes */
+
 @mixin estiloDeportes(){
     margin: 1rem;
     background-color: $color-secundary;
@@ -15,28 +78,15 @@
     color: $color-tittle;
 }
 
-/* Mixins para estilos del footer */
+/* Mixins para los estilos de las tarjetas de la seccion Noticias */
 
-@mixin estiloFooter(){
-    background-color: $color-secundary;
-    font-family: $font-secundary; 
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 0.1rem;
-}
-
-@mixin footerTexto{
-    font-size: 1rem;
-    color: $color-tittle;
-    margin-bottom: 0px;
-}
-
-/* Mixins para el estilo del Logo principal */
-
-@mixin tamanioLogo(){
-    width: 3rem;
-    margin-left: 5rem;
-    margin-right: 10rem; 
+@mixin noticiasCard(){
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem;
 }
 
 /* Mixins para los estilos de las tarjetas */
@@ -62,28 +112,21 @@
     margin-top: 1rem;
 }
 
-/* Mixins para el tamaño y estilo de la portada principal */
-
-@mixin fotoPortada(){
-    background-image: url(../recursos/portada.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-@mixin tamanioPortada(){
-    height: 40rem;
-    padding: 1rem;
-	margin-bottom: 1rem;
-}
-
+/* Mixin para estilos de los botones */
 @mixin botonNormal{
     background-color: $button-color;
+    font-family: $font-secundary;
     color: $button-color-letter;
 }
 
 @mixin botonNav{
     background-color: $color-body;
+    font-family: $font-secundary;
     color: $color-primary;
+}
+
+@mixin botonHover(){
+    background-color: $color-secundary;
+    transform: scale(1.2);
+    color: $button-color-hover; 
 }
